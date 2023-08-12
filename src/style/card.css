@@ -1,0 +1,177 @@
+:root {
+    --roxo-principal: #483d8b;
+    --roxo-secundario: #6652E2;
+    --roxo-mais-claro: #6652e2;
+    --roxo-claro: #8679b1;
+    --roxo-mais-claro: #a499c4;
+    --roxo-quase-branco: #c2bad8;
+    --branco-fundo: #e0dceb;
+  
+    --cor-fundo-INPUTS: #f0f0f0;
+    --cinza-claro-bordas-INPUTS: #c2bad8;
+  
+    --cinza-quase-preto: #343434;
+    --cinza-escuro-TEXTOS: #7b7b7b;
+    --cinza: #8e8e8e;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: #1b1b1b;
+  }
+  
+  ion-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    cursor: pointer;
+    color: var(--cor-fundo-INPUTS);
+  }
+  
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    all: unset;
+    padding: 12px;
+    border-radius: 50px;
+    background: var(--roxo-claro);
+  }
+  
+  
+  .container-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 2vw;
+    width: 700px;
+    height: 60vh;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 4px solid var(--roxo-quase-branco);
+    background: var(--branco-fundo);
+  }
+  
+  .container-imgView {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 80%;
+    height: 100%;
+  }
+  
+  #carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 80%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+  }
+  
+  .view-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  #container-imgsButtons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: visible;
+    gap: 10px;
+    padding: 6px;
+    width: 30%;
+    height: 100%;
+  }
+  
+  .prev-imgsButtons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 80px;
+    padding: 0px 12px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 4px solid var(--roxo-quase-branco);
+    background: var(--cor-fundo-INPUTS);
+  }
+  
+  .prev-imgsButtons.selected {
+    border-color: var(--roxo-secundario);
+  }
+  
+  .prev-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  #carousel:hover {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .view-img:hover {
+    scale: 2;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .container-carousel {
+      flex-direction: column-reverse;
+      width: 90vw;
+      height: auto;
+    }
+  
+    #container-imgsButtons {
+      flex-direction: row;
+      width: 100%;
+      height: 30%;
+    }
+    #carousel {
+      width: 100%;
+      height: 100%;
+    }
+    .container-imgView {
+      width: 100%;
+      height: 50vh;
+    }
+    #container-imgsButtons {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;  
+    }
+    .prev-imgsButtons {
+      width: 120px;
+    }
+  }
+  
+  #container-imgsButtons::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  #container-imgsButtons::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  #container-imgsButtons::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 20px;
+    border: transparent;
+  }
