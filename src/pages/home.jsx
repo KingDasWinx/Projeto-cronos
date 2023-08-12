@@ -1,7 +1,8 @@
+import Header from "../components/header";
 
 function Home() {
     return(
-        <h1>Motta é gordo</h1>
+        <Header />
     )
 }
 

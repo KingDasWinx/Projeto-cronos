@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik';
+    color: var(--branco-fundo);
+    /* outline: 2px dashed #000; */
+    transition: all .5s ease;
+}
+
+:root {
+    --roxo-principal: #483D8B;
+    --roxo-mais-claro: #6652E2;
+    --roxo-claro: #8679B1;
+    --roxo-mais-claro: #A499C4;
+    --roxo-quase-branco: #C2BAD8;
+    --branco-fundo: #E0DCEB;
+
+    --cor-fundo-INPUTS: #F0F0F0;
+    --cinza-claro-bordas-INPUTS: #C2BAD8;
+
+    --cinza-quase-preto: #343434;
+    --cinza-escuro-TEXTOS: #7B7B7B;
+    --cinza: #8E8E8E;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #1b1b1b;
+}
+
+ion-icon {
+    font-size: 22px;
+    cursor: pointer;
+    color: var(--cinza-quase-preto);
+}
+
+input {
+    background: var(--cor-fundo-INPUTS);
+    border: 2px solid var(--cinza-claro-bordas-INPUTS);
+    border-radius: 6px;
+}
+
+/* -------------- Header - GLOBAL -------------- */
+
+.header-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 80px;
+    background: var(--branco-fundo);
+    border-bottom: 4px solid var(--roxo-principal);
+}
+
+/* ======= Left Div ======= */
+.div-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.img-logo {
+    height: 80%;
+}
+
+
+
+
+/* ======= Left Div ======= */
+.div-center {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60%;
+    width: 50%;
+    padding: 6px 12px;
+    border-radius: 6px;
+    background: var(--cor-fundo-INPUTS);
+    border: 2px solid var(--cinza-claro-bordas-INPUTS);
+}
+
+.bar {
+    width: 2px;
+    height: 20px;
+    border-radius: 2px;
+    background: var(--cinza-claro-bordas-INPUTS);
+}
+
+/* .search-icon {
+} */
+
+.input-searchProducts {
+    all: unset;
+    gap: 14px;
+    height: 50%;
+    width: 80%;
+    padding: 10px 22px 10px 14px;
+    color: var(--cinza-quase-preto);
+}
+
+/* .filter-icon {
+} */
+
+
+.div-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+
+@media (max-width: 568px) {
+    .header-main {
+        background: var(--roxo-principal);
+    }
+    .container-search {
+        display: none;
+    }
+    #search-icon .--inputActive {
+        display: flex;
+    }
+}
