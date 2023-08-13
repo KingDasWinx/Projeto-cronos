@@ -9,10 +9,14 @@ import "../global.css"
 function Home() {
     return (
         <div className='body' >
-            <div> <Header /> </div>
-            <div> <CarouselA/> </div>
-            <div> <Card/> </div>
-            <div> <Footer/></div>
+            <Header />
+            <section className='home-section'>
+                <CarouselA/>
+            </section>
+            <section className='cards-section'>
+                <Card/>
+            </section>
+            <Footer/>
         </div>
     )
 }

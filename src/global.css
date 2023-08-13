@@ -1,18 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Rubik';
-  text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik';
+    /* outline: 2px dashed #000; */
+    transition: all .5s ease;
+}
 
+:root {
+    --roxo-principal: #483D8B;
+    --roxo-mais-claro: #6652E2;
+    --roxo-claro: #8679B1;
+    --roxo-mais-claro: #A499C4;
+    --roxo-quase-branco: #C2BAD8;
+    --branco-fundo: #E0DCEB;
+
+    --cor-fundo-INPUTS: #F0F0F0;
+    --cinza-claro-bordas-INPUTS: #C2BAD8;
+    
+    --cinza-quase-preto: #343434;
+    --cinza-escuro-TEXTOS: #7B7B7B;
+    --cinza: #8E8E8E;
 }
 
 .body {
-  background-color: #E0DCEB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 2vw;
   overflow-x: hidden;
-  text-decoration: none;
+  background-color: var(--branco-fundo);
 }
+
+button {
+  border: none;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  padding: 0 0 2rem 0;
+  border-bottom: solid 2px var(--roxo-principal);
+}
+
+.home-section {
+  height: auto;
+}
+
+.cards-section {
+  height: auto;
+}
+
 

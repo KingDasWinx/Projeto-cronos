@@ -41,7 +41,9 @@ function CarouselA() {
                         <img src={img5} alt="Imagem 5" />
                     </div>
                 </Carousel>
-                <Link to="/compra" ><button className='visualizar' >Visualizar Produto</button></Link>
+                <Link to="/compra" >
+                    <button className='visualizar' >Visualizar Produto</button>
+                </Link>
                 
             </div>
         </div>

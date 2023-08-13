@@ -1,6 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik';
+    /* outline: 2px dashed #000; */
+    transition: all .5s ease;
+}
 
 :root {
     --roxo-principal: #483d8b;
@@ -28,22 +36,21 @@
     color: var(--roxo-principal);
 }
 
-.testee {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
 .bu {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border: none;
     cursor: pointer;
-    all: unset;
     border-radius: 12px;
     background: var(--roxo-principal);
+}
+
+.container-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    gap: 24px;
 }
 
 /* ============== Card - MAIN ============== */
@@ -51,13 +58,14 @@
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
-    width: 280px;
-    height: 450px;
+    width: 240px;
+    height: 440px;
     max-height: auto;
-    gap: 1rem;
+    gap: .5rem;
     padding: 1rem;
+    overflow: hidden;
     border-radius: 16px;
     background: var(--cor-fundo-INPUTS);
 }
@@ -75,9 +83,8 @@
 }
 
 .rating-star ion-icon {
-    position: relative;
+    color: var(--roxo-principal);
     font-size: 14px;
-    top: -8.5px;
 }
 
 .rating-value {
@@ -86,64 +93,33 @@
 }
 
 /* ----- Color Selectors - DOTS ----- */
-.carousel-indicators {
-    position: relative;
-}
-
 .--b {
     background: #0000ff;
-}
-
-.--w {
+}.--w {
     background: #fff;
-}
-
-.--o {
+}.--o {
     background: #ff5e00;
-}
-
-.--lb {
+}.--lb {
     background: #000;
 }
-
-.carousel-indicators [data-bs-target] {
-    opacity: 1000%;
-    border: none;
-    padding: 0;
-    margin: 0;
-    height: 32px;
-    width: 32px;
-    transition: all .3s;
-    background-color: transparent;
-    margin-top: 20px;
-}
-
-
 
 .color-selectors {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    padding: 0;
     gap: 8px;
 }
 
-.color-dot {
+.color-dot { 
+    list-style: none;
     cursor: pointer;
-    width: 30px;
+    width: 32px;
     height: 32px;
+    border-radius: 50px;
     box-shadow: inset 2px 2px 4px 0 var(--cinza-quase-preto);
     box-shadow: inset 0 0 0 3px var(--cinza-claro-bordas-INPUTS);
-    border-radius: 50px;
-}
-
-.papi {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    gap: 24px;
-    flex-wrap: wrap;
 }
 
 .color-dot.--selected {
@@ -154,30 +130,14 @@
 
 /* ----- IMAGE VIEW ----- */
 .container-images {
+    display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 23px;
     width: 80%;
 }
 
 .img-view {
     width: 100%
-}
-
-.--b {
-    background: #0000ff;
-}
-
-.--w {
-    background: #fff;
-}
-
-.--o {
-    background: #ff5e00;
-}
-
-.--lb {
-    background: #000;
 }
 
 /* ----- Price ----- */
@@ -223,8 +183,10 @@
 }
 
 .name-product {
+    word-break: unset;
+    font-weight: 700;
     font-family: "Roboto Condensed";
-    font-size: 28px;
+    font-size: 1.6rem;
     width: 100%;
     color: var(--cinza-quase-preto);
 }
@@ -241,41 +203,52 @@
     content: "Comprar";
 }
 
-@media (max-width: 568px) {
+@media (max-width: 600px) {
     .card-main {
-        height: 280px;
+        position: relative;
         width: 45%;
+        height: 380px;
     }
     .papi {
         gap: 14px;
     }
     .container-price {
-        margin-top: 5px;
+        width: 100%;
     }
-
+    .container-cards {
+        gap: 12px;
+    }
     .buy-button {
         content: "";
         position: absolute;
         top: 0;
         left: 0;
-        width: 112.5px;
-        height: 247.5px;
-        /* color: transparent; */
+        width: 100%;
+        height: 100%;
+        color: transparent;
         background: transparent;
     }
+    .name-product {
+        font-size: 4vw;
+    }
     .container-images {
+        width: 100%;
         margin-bottom: 10px;
         margin-top: 10px;
     }
     .bu {
         border-radius: 16px;
     }
-
     .buy-button::before {
         content: "";
     }
 
     .color-selectors {
         display: none;
+    }
+    .cora {
+        top: 2rem;
+        right: 1rem;
+        position: absolute;
     }
 }
