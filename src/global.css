@@ -6,15 +6,13 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Rubik';
+  text-decoration: none;
 
 }
 
 .body {
   background-color: #E0DCEB;
   overflow-x: hidden;
+  text-decoration: none;
 }
 
-button {
-  border-color: transparent;
-  box-shadow: none;
-}

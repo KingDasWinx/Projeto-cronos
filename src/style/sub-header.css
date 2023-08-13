@@ -1,0 +1,80 @@
+.sub-header-global-compra-direta {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px;
+    gap: 14px;
+    background: var(--roxo-principal, #483D8B);
+}
+
+.btn-voltar {
+    display: flex;
+    padding: 10px 10px;
+    border-radius: 100%;
+    background: #fff;
+}
+
+.btn-voltar ion-icon {
+    font-size: 20px;
+    color: #343434;
+}
+
+.product-name {
+    color: var(--branco-fundo, #E0DCEB);
+    text-align: center;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+
+
+.area-infoscompra-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.product-price {
+    color: var(--branco-fundo, #E0DCEB);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.product-price-color {
+    color: var(--branco-fundo, #D9D9D9);
+    font-family: Rubik;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.btn-compraragora {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+
+    color: #343434;
+    border-radius: 50px;
+    background: var(--cor-fundo-inputs, #F0F0F0);
+}
+
+@media (max-width: 800px) {
+    .product-name {
+        font-size: 30px;
+    }
+    .product-price {
+        font-size: 14px;
+    }
+    .product-price-color {
+        font-size: 16px;
+    }
+}
+@media (max-width: 568px) {
+    .sub-header-global-compra-direta{
+        display: none;
+    }
+}

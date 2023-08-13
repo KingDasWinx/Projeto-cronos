@@ -3,11 +3,12 @@ import Header from "../components/header";
 import CarouselA from '../components/carousel';
 import Card from '../components/card';
 import Footer from '../components/footer';
+import "../style/home.css"
 
 function Home() {
     return (
         <div className='body' >
-            <div className='header'> <Header /> </div>
+            <div> <Header /> </div>
             <div> <CarouselA/> </div>
             <div> <Card/> </div>
             <div> <Footer/></div>
