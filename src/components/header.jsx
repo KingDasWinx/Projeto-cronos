@@ -30,7 +30,7 @@ function Header() {
                         <div class="div-center">
                             <div class="input-container">
                                 <ion-icon class="search-icon" name="search"></ion-icon>
-                                <input onClick={() => { window.location.href = '/search'; }} class="input-searchProducts" type="text" placeholder="Pesquisar Relógios..." />
+                                <input onClick={() => { window.location.href = '/search'; }} class="input-searchProducts inpu" type="text" placeholder="Pesquisar Relógios..." />
                                 <ion-icon class="filter-icon" name="filter"></ion-icon>
                             </div>
                         </div>

@@ -31,7 +31,7 @@ ion-icon {
     color: var(--cinza-quase-preto);
 }
 
-input {
+.inpu {
     all: unset;
     padding: 10px 42px 10px 42px;
     border-radius: 6px;
@@ -40,12 +40,12 @@ input {
     transition: all .2s ease;   
 }
 
-input:focus {
+.inpu:focus {
     font-size: 16px;
     border: 2px solid var(--roxo-principal);
 }
 
-input::placeholder {
+.inpu::placeholder {
     font-size: 14px;
     color: var(--cinza-claro-bordas-INPUTS);
 }

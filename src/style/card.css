@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+
+:root {
+  --roxo-principal: #483d8b;
+  --roxo-secundario: #6652E2;
+  --roxo-mais-claro: #6652e2;
+  --roxo-claro: #8679b1;
+  --roxo-mais-claro: #a499c4;
+  --roxo-quase-branco: #c2bad8;
+  --branco-fundo: #e0dceb;
+
+  --cor-fundo-INPUTS: #f0f0f0;
+  --cinza-claro-bordas-INPUTS: #c2bad8;
+
+  --cinza-quase-preto: #343434;
+  --cinza-escuro-TEXTOS: #7b7b7b;
+  --cinza: #8e8e8e;
+}
+
+.icones {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  cursor: pointer;
+  color: var(--roxo-principal);
+}
+
+.bu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  all: unset;
+  border-radius: 12px;
+  background: var(--roxo-principal);
+}
+
+/* ============== Card - MAIN ============== */
+.card-main {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 280px;
+    max-height: auto;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 16px;
+    background: var(--cor-fundo-INPUTS);
+}
+
+
+.rating-star {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    gap: 4px;
+    top: 1rem;
+    left: 1rem;
+}
+
+.rating-star ion-icon {
+    font-size: 14px;
+}
+
+.rating-value {
+    color: var(--roxo-principal);
+    font-weight: 600;
+}
+
+/* ----- Color Selectors - DOTS ----- */
+
+.image {
+    display: none;
+}
+
+
+.color-selectors {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.color-dot {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    box-shadow: inset 2px 2px 4px 0 var(--cinza-quase-preto);
+    box-shadow: inset 0 0 0 3px var(--cinza-claro-bordas-INPUTS); 
+    border-radius: 50px;
+}
+
+.color-dot.--selected {
+    width: 36px;
+    height: 36px;
+    border: solid 4px var(--roxo-principal);
+}
+
+
+/* ----- IMAGE VIEW ----- */
+.container-images {
+    width: 80%;
+}
+
+.img-view {
+    width: 100%
+}
+
+.--b {
+    background: #0000ff;
+}.--w {
+    background: #fff;
+}.--o {
+    background: #ff5e00;
+}.--lb {
+    background: #000;
+}
+
+
+/* ----- Price ----- */
+.container-price {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.container-foot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.old-price::before,
+.new-price::before {
+    content: "R$";
+    font-size: 12px;
+}
+
+.old-price {
+    font-size: 14px;
+    color: var(--cinza-escuro-TEXTOS);
+    text-decoration: line-through;
+}
+
+.new-price {
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--roxo-principal);
+}
+
+.name-product {
+    font-family: "Roboto Condensed";
+    font-size: 28px;
+    width: 100%;
+    color: var(--cinza-quase-preto);
+}
+
+
+/* ----- Buy Button ----- */
+.buy-button {
+    color: var(--branco-fundo);
+    padding: 1rem 2rem;
+}
+
+.buy-button::before {
+    content: "Comprar";
+}
+
+@media (max-width: 568px) {
+    .buy-button {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* color: transparent; */
+        background: transparent;
+    }
+    .buy-button::before {
+        content: "";
+    }
+    .color-selectors {
+        display: none;
+    }
+}

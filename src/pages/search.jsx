@@ -30,7 +30,7 @@ function Search() {
                         <div class="div-center">
                             <div class="input-container">
                                 <ion-icon class="search-icon" name="search"></ion-icon>
-                                <input class="input-searchProducts" type="text" placeholder="Pesquisar Relógios..." />
+                                <input class="input-searchProducts inpu" type="text" placeholder="Pesquisar Relógios..." />
                                 <ion-icon class="filter-icon" name="filter"></ion-icon>
                             </div>
                         </div>
@@ -45,7 +45,7 @@ function Search() {
                         <Link to="/" ><button className="search-button" ><ion-icon name="chevron-back"></ion-icon></button> </Link>
                         <div class="input-container-mobile" id="searchInput">
                             <ion-icon class="search-icon-mobile" name="search"></ion-icon>
-                            <input class="input-searchProducts-mobile" type="text" placeholder="Pesquisar Relógios..." />
+                            <input class="input-searchProducts-mobile inpu" type="text" placeholder="Pesquisar Relógios..." />
                             <ion-icon class="filter-icon-mobile" name="filter"></ion-icon>
                         </div>
                         <button className="search-button" ><ion-icon name="bag"></ion-icon></button>
