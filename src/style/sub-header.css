@@ -1,3 +1,7 @@
+p{
+    margin-bottom: 0;
+}
+
 .sub-header-global-compra-direta {
     display: flex;
     justify-content: space-around;
@@ -61,6 +65,7 @@
     border-radius: 50px;
     background: var(--cor-fundo-inputs, #F0F0F0);
 }
+
 
 @media (max-width: 800px) {
     .product-name {

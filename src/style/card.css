@@ -3,39 +3,47 @@
 
 
 :root {
-  --roxo-principal: #483d8b;
-  --roxo-secundario: #6652E2;
-  --roxo-mais-claro: #6652e2;
-  --roxo-claro: #8679b1;
-  --roxo-mais-claro: #a499c4;
-  --roxo-quase-branco: #c2bad8;
-  --branco-fundo: #e0dceb;
+    --roxo-principal: #483d8b;
+    --roxo-secundario: #6652E2;
+    --roxo-mais-claro: #6652e2;
+    --roxo-claro: #8679b1;
+    --roxo-mais-claro: #a499c4;
+    --roxo-quase-branco: #c2bad8;
+    --branco-fundo: #e0dceb;
 
-  --cor-fundo-INPUTS: #f0f0f0;
-  --cinza-claro-bordas-INPUTS: #c2bad8;
+    --cor-fundo-INPUTS: #f0f0f0;
+    --cinza-claro-bordas-INPUTS: #c2bad8;
 
-  --cinza-quase-preto: #343434;
-  --cinza-escuro-TEXTOS: #7b7b7b;
-  --cinza: #8e8e8e;
+    --cinza-quase-preto: #343434;
+    --cinza-escuro-TEXTOS: #7b7b7b;
+    --cinza: #8e8e8e;
 }
 
 .icones {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 22px;
-  cursor: pointer;
-  color: var(--roxo-principal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    cursor: pointer;
+    color: var(--roxo-principal);
+}
+
+.testee {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .bu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  all: unset;
-  border-radius: 12px;
-  background: var(--roxo-principal);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    all: unset;
+    border-radius: 12px;
+    background: var(--roxo-principal);
 }
 
 /* ============== Card - MAIN ============== */
@@ -46,6 +54,7 @@
     justify-content: space-between;
     flex-direction: column;
     width: 280px;
+    height: 450px;
     max-height: auto;
     gap: 1rem;
     padding: 1rem;
@@ -66,7 +75,9 @@
 }
 
 .rating-star ion-icon {
+    position: relative;
     font-size: 14px;
+    top: -8.5px;
 }
 
 .rating-value {
@@ -75,10 +86,38 @@
 }
 
 /* ----- Color Selectors - DOTS ----- */
-
-.image {
-    display: none;
+.carousel-indicators {
+    position: relative;
 }
+
+.--b {
+    background: #0000ff;
+}
+
+.--w {
+    background: #fff;
+}
+
+.--o {
+    background: #ff5e00;
+}
+
+.--lb {
+    background: #000;
+}
+
+.carousel-indicators [data-bs-target] {
+    opacity: 1000%;
+    border: none;
+    padding: 0;
+    margin: 0;
+    height: 32px;
+    width: 32px;
+    transition: all .3s;
+    background-color: transparent;
+    margin-top: 20px;
+}
+
 
 
 .color-selectors {
@@ -87,13 +126,24 @@
     justify-content: center;
     gap: 8px;
 }
+
 .color-dot {
     cursor: pointer;
-    width: 32px;
+    width: 30px;
     height: 32px;
     box-shadow: inset 2px 2px 4px 0 var(--cinza-quase-preto);
-    box-shadow: inset 0 0 0 3px var(--cinza-claro-bordas-INPUTS); 
+    box-shadow: inset 0 0 0 3px var(--cinza-claro-bordas-INPUTS);
     border-radius: 50px;
+}
+
+.papi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    gap: 24px;
+    flex-wrap: wrap;
 }
 
 .color-dot.--selected {
@@ -102,9 +152,11 @@
     border: solid 4px var(--roxo-principal);
 }
 
-
 /* ----- IMAGE VIEW ----- */
 .container-images {
+    align-items: center;
+    justify-content: center;
+    margin-left: 23px;
     width: 80%;
 }
 
@@ -114,14 +166,19 @@
 
 .--b {
     background: #0000ff;
-}.--w {
-    background: #fff;
-}.--o {
-    background: #ff5e00;
-}.--lb {
-    background: #000;
 }
 
+.--w {
+    background: #fff;
+}
+
+.--o {
+    background: #ff5e00;
+}
+
+.--lb {
+    background: #000;
+}
 
 /* ----- Price ----- */
 .container-price {
@@ -131,11 +188,19 @@
     flex-direction: column;
     width: 100%;
 }
+
 .container-foot {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
+
+}
+
+.cora {
+    z-index: 9999;
+    margin-top: -10px;
+    margin-right: -20px;
 }
 
 .old-price::before,
@@ -148,6 +213,7 @@
     font-size: 14px;
     color: var(--cinza-escuro-TEXTOS);
     text-decoration: line-through;
+    margin-bottom: -5px;
 }
 
 .new-price {
@@ -164,6 +230,7 @@
 }
 
 
+
 /* ----- Buy Button ----- */
 .buy-button {
     color: var(--branco-fundo);
@@ -175,19 +242,39 @@
 }
 
 @media (max-width: 568px) {
+    .card-main {
+        height: 280px;
+        width: 45%;
+    }
+    .papi {
+        gap: 14px;
+    }
+    .container-price {
+        margin-top: 5px;
+    }
+
     .buy-button {
         content: "";
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
-        height: 100%;
+        width: 112.5px;
+        height: 247.5px;
         /* color: transparent; */
         background: transparent;
     }
+    .container-images {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .bu {
+        border-radius: 16px;
+    }
+
     .buy-button::before {
         content: "";
     }
+
     .color-selectors {
         display: none;
     }

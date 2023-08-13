@@ -6,7 +6,7 @@ function Heart() {
         icons.forEach(icon => {
             if (icon.getAttribute('name') === 'heart-outline') {
                 icon.setAttribute('name', 'heart');
-            } else if (icon.getAttribute('name') === 'heart') {
+            } if (icon.getAttribute('name') === 'heart') {
                 icon.setAttribute('name', 'heart-outline');
             }
         });
@@ -15,12 +15,12 @@ function Heart() {
 
         setTimeout(() => {
             popBars.forEach(bars => bars.classList.remove('explosion'));
-        }, 500);
+        }, 200);
 
     }
 
     function favoriteItem() {
-        setTimeout(favItem, 200)
+        setTimeout(favItem)
     }
 
     return (
@@ -28,7 +28,7 @@ function Heart() {
             <span class="pop-bars rot45 --leftTop"></span>
             <span class="pop-bars --leftCenter"></span>
             <span class="pop-bars rot-45 --leftBottom"></span>
-            <ion-icon class="heart-favoriteItem" name="heart-outline" onClick={favoriteItem} ></ion-icon>
+            <ion-icon class="heart-favoriteItem" name="heart-outline" onClick={favItem} ></ion-icon>
             <span class="pop-bars rot-45 --rightTop"></span>
             <span class="pop-bars --rightCenter"></span>
             <span class="pop-bars rot45 --rightBottom"></span>

@@ -1,9 +1,10 @@
 import "../style/sub-header.css";
+import { Link } from 'react-router-dom';
 
 function SubHeader() {
     return (
         <div class="sub-header-global-compra-direta">
-            <button class="btn-voltar btn-global-padrao"><ion-icon class="back" name="chevron-back"></ion-icon></button>
+            <Link to="/" ><button class="btn-voltar btn-global-padrao"><ion-icon class="back" name="chevron-back"></ion-icon></button> </Link>
             <p class="product-name">Rilógio Ismart Uati P30</p>
             <div class="area-infoscompra-header">
                 <p class="product-price">Modelo à partir de R$<span class="product-price product-price-color">4.299</span> à

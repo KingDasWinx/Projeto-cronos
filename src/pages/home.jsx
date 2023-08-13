@@ -4,6 +4,7 @@ import CarouselA from '../components/carousel';
 import Card from '../components/card';
 import Footer from '../components/footer';
 import "../style/home.css"
+import "../global.css"
 
 function Home() {
     return (

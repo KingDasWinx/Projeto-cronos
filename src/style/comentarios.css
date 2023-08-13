@@ -47,7 +47,7 @@
     padding: 10px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 12px;
+    gap: 4px;
     flex-shrink: 0;
 
     border-radius: 24px;
@@ -70,7 +70,7 @@
     justify-content: center;
     align-items: center;
 
-    gap: 12px;
+    gap: 8px;
 }
 
 .usuario-foto-perfil {
@@ -85,7 +85,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 10px;
+    gap: 8px;
 }
 
 
@@ -139,7 +139,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 12px;
+    gap: 8px;
     align-self: stretch;
 }
 
@@ -171,7 +171,7 @@
     justify-content: center;
     align-items: flex-start;
     margin-top: -6px;
-    gap: 12px;
+    gap: 8px;
     align-self: stretch;
 }
 
@@ -318,7 +318,6 @@
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
-    line-height: normal;
 }
 
 .foto-do-produto-quantidade {
