@@ -50,17 +50,6 @@ ion-icon {
     color: var(--cinza-claro-bordas-INPUTS);
 }
 
-button {
-    all: unset;
-    padding: 12px 24px;
-    border-radius: 12px;
-    font-size: 12px;
-    cursor: pointer;
-    transition: all .5s ease; 
-}
-button:hover {
-    box-shadow: 0px 0px 12px 0px var(--roxo-principal);
-}
 
 /* -------------- Header - GLOBAL -------------- */
 
@@ -71,7 +60,7 @@ button:hover {
     gap: 24px;
     top: 0;
     width: 100vw;
-    height: 12vh;
+    height: 10vh;
     background: var(--branco-fundo);
     border-bottom: 4px solid var(--roxo-principal);
     z-index: 999999;
@@ -120,12 +109,12 @@ button:hover {
 .search-icon {
     left: 12px;
 }
-
 .filter-icon {
     right: 12px;
 }
 
 .input-searchProducts {
+    position: relative;
     color: var(--cinza-quase-preto);
     border: 2px solid var(--cinza-claro-bordas-INPUTS);
     padding-left: 40px;
@@ -151,7 +140,8 @@ button:hover {
 
 .login-button {
     color: #fff;
-    padding: 1vw;
+    padding: 12px;
+    border-radius: 12px;
     background: var(--roxo-principal);
 }
 /* -------------- Header - MOBILE -------------- */
@@ -170,55 +160,11 @@ button:hover {
     height: 50%;
 }
 
-#searchIcon {
-    display: flex;
-}
-
-.input-container-mobile.--activeInput {
-    display: flex;
-}
-
-
 .--f {
     display: none;
 }
 
-.input-container-mobile {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-}
-
-.search-icon-mobile,
-.filter-icon-mobile {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 20px;
-    color: var(--cinza-quase-preto);
-}
-
-.search-icon-mobile {
-    left: 12px;
-}
-
-.filter-icon-mobile {
-    right: 12px;
-}
-
-.input-searchProducts-mobile {
-    color: var(--cinza-quase-preto);
-    border: 2px solid var(--cinza-claro-bordas-INPUTS);
-    padding-left: 40px;
-    padding-right: 40px;
-    width: 100%;
-}
-
-
-
-@media (max-width: 568px) {
+@media (max-width: 600px) {
     ion-icon {
         color: var(--branco-fundo);
     }

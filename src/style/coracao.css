@@ -5,7 +5,7 @@
   
   .heart-favoriteItem {
     cursor: pointer;
-    font-size: 36px;
+    font-size: 32px;
     color: var(--roxo-principal);
   }
   
