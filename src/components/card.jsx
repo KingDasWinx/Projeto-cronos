@@ -6,110 +6,38 @@ import Heart from "./coracao";
 
 import Carousel from "react-bootstrap/Carousel";
 import { Link } from "react-router-dom";
+import { array } from "../script/array";
 
 function Card() {
-  const produtos = [
-    {
-      title: "NexaWear Pro",
-      ava: "5.0",
-      nprice: "2499.90",
-      oprice: "2999.90",
-      cora: <Heart />,
-    },
-    {
-      title: "OmniTech X",
-      ava: "3.0",
-      nprice: "3199.90",
-      oprice: "4999.90",
-      cora: <Heart />,
-    },
-    {
-        title: "PulseGuard E",
-        ava: "1.0",
-        nprice: "2799.90",
-        oprice: "2999.90",
-        cora: <Heart />,
-    },
-    {
-      title: "AeroLink V",
-      ava: "4.5",
-      nprice: "4499.90",
-      oprice: "4999.90",
-      cora: <Heart />,
-    },
-    {
-      title: "ZeniSync Elite",
-      ava: "5.0",
-      nprice: "2299.90",
-      oprice: "2799.90",
-      cora: <Heart />,
-    },
-    {
-      title: "VirtuWrist H",
-      ava: "4.9",
-      nprice: "4299.90",
-      oprice: "5000.00",
-      cora: <Heart />,
-    },
-    {
-      title: "QuantumSn P",
-      ava: "2.4",
-      nprice: "3999.90",
-      oprice: "4400.90",
-      cora: <Heart />,
-    },
-    {
-      title: "LuminaLink N",
-      ava: "3.5",
-      nprice: "3499.90",
-      oprice: "3999.90",
-      cora: <Heart />,
-    },
-    {
-      title: "TechNova S",
-      ava: "4.4",
-      nprice: "2999.90",
-      oprice: "3999.90",
-      cora: <Heart />,
-    },
-    {
-      title: "EvolveWear F",
-      ava: "4.8",
-      nprice: "4799.90",
-      oprice: "5399.90",
-      cora: <Heart />,
-    },
-  ];
 
   return (
-    <div className="container-cards">
-      {produtos.map((pro) => {
+    <div className="container-cards" >
+      {array.map(array => {
         return (
           <div className="card-main">
             <div className="rating-star">
               <ion-icon className="icones" name="star"></ion-icon>
-              <p className="rating-value">{pro.ava}</p>
+              <p className="rating-value">{array.ava}</p>
             </div>
 
             <div className="container-images">
-                <img className="img-view" src={watch1} alt="" />
+              <img className="img-view" src={array.img} alt="" />
             </div>
 
             <ul className="color-selectors">
-              <li className="color-dot --selected --b"></li>
-              <li className="color-dot --w"></li>
-              <li className="color-dot --o"></li>
-              <li className="color-dot --lb"></li>
+              <li className="color-dot --selected" style={{ backgroundColor: array.cor1 }} ></li>
+              <li className="color-dot" style={{ backgroundColor: array.cor2 }}></li>
+              <li className="color-dot" style={{ backgroundColor: array.cor3 }}></li>
             </ul>
 
-            <h1 className="name-product">{pro.title}</h1>
+            <h1 className="name-product">{array.title}</h1>
 
             <div className="container-foot">
               <div className="container-price">
-                <p className="old-price">{pro.oprice}</p>
-                <p className="new-price">{pro.nprice}</p>
+                <p className="old-price">{array.oprice}</p>
+                <p className="new-price">{array.nprice}</p>
               </div>
-              <div className="cora">{pro.cora}</div>
+              <div className="cora"></div>
             </div>
 
             <Link to="/compra">
@@ -117,7 +45,7 @@ function Card() {
               <button className="buy-button bu"></button>{" "}
             </Link>
           </div>
-        );
+        )
       })}
     </div>
   );

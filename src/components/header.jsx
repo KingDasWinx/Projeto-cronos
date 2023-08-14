@@ -24,20 +24,30 @@ function Header() {
                 <div className='boy' >
                     <header class="header-main">
                         <div class="div-left">
-                            <Link to="/" ><img class="img-logo" title="Logo Cronos" src={logocronos} alt="" /> </Link>
+                            <Tooltip title="Cronos" arrow>
+                                <Link to="/" ><img class="img-logo" src={logocronos} alt="" /> </Link>
+                            </Tooltip>
                         </div>
 
                         <div class="div-center">
                             <div class="input-container">
-                                <ion-icon class="search-icon" name="search"></ion-icon>
+                                <Tooltip title="Pesquisar" arrow>
+                                    <ion-icon class="search-icon" name="search"></ion-icon>
+                                </Tooltip>
                                 <input onClick={() => { window.location.href = '/search'; }} class="input-searchProducts inpu" type="text" placeholder="Pesquisar Relógios..." />
-                                <ion-icon class="filter-icon" name="filter"></ion-icon>
+                                <Tooltip title="Filtro" arrow>
+                                    <ion-icon class="filter-icon" name="filter"></ion-icon>
+                                </Tooltip>
                             </div>
                         </div>
 
                         <div class="div-right">
-                            <ion-icon name="bag"></ion-icon>
-                            <ion-icon name="ellipsis-vertical"></ion-icon>
+                            <Tooltip title="Sacola" arrow>
+                                <ion-icon name="bag"></ion-icon>
+                            </Tooltip>
+                            <Tooltip title="Menu" arrow>
+                                <ion-icon name="ellipsis-vertical"></ion-icon>
+                            </Tooltip>
                             <button class="login-button">Acessar minha conta</button>
                         </div>
                     </header>
