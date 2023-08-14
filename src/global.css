@@ -58,4 +58,22 @@ section {
   height: auto;
 }
 
+.compra-section {
+  width: 100vw;
+  height: auto;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
 
+  padding: 2rem 0 2rem 0;
+}
+
+@media (max-width: 1000px) {
+  .compra-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}

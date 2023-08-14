@@ -1,0 +1,538 @@
+.personalizacao-dos-produtos {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 600px;
+    height: 1100px;
+    padding: 30px;
+    border-radius: 10px;
+    background: #ffffff;
+}
+
+.heart{
+    height: 17px;
+    width: 17px;
+}
+
+.relogio {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: last baseline;
+}
+
+.escrita-rologio {
+    color: var(--cinza-quase-preto, #343434);
+    text-align: center;
+    font-family: Roboto Condensed;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.frame-399 {
+    display: flex;
+    flex-direction: column;
+}
+
+.estoque {
+    color: var(--cinza-quase-preto, #343434);
+    font-family: Rubik;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.disponibilidade {
+    color: var(--cinza-quase-preto, #343434);
+    font-family: Rubik;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+}
+
+.frame-271 {
+    display: flex;
+    align-items: last baseline;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.preco-pai {
+    display: flex;
+    align-items: last baseline;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.a-partir-de {
+    color: var(--cinza-quase-preto, #343434);
+    font-family: Rubik;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.preco1 {
+    color: var(--roxo-principal, #483D8B);
+    font-family: Rubik;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.avaliation {
+    color: var(--roxo-principal, #483D8B);
+    font-family: Rubik;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.stars {
+    color: var(--roxo-principal, #483D8B);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number-avaliation {
+    color: var(--cinza-quase-preto, #343434);
+    font-family: Rubik;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.frame-255 {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    gap: 15px;
+    background: var(--branco-fundo, #E0DCEB);
+}
+
+.personalizacao-pai {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.personalizacao {
+
+    color: var(--roxo-principal, #483D8B);
+    text-align: center;
+    font-family: Rubik;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.corzinha-pai {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.cor-caixa {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+}
+
+.seleo-de-cor-do-relogio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.dark2 {
+    color: var(--cinza-quase-preto, #343434);
+    font-family: Rubik;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.frame-87 {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 500px;
+    border: 4px solid var(--cinza-claro-bordas-inputs, #C2BAD8);
+    background: #F5F5F5;
+    cursor: pointer;
+
+    /* Sombra Icones Padrao */
+    box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.frame-88 {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 500px;
+    border: 3px solid var(--branco-fundo, #E0DCEB);
+    background: #414141;
+    box-shadow: -2px 5px 2px 2px rgba(0, 0, 0, 0.25) inset;
+}
+
+.frame-881 {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 500px;
+    border: 3px solid var(--branco-fundo, #E0DCEB);
+    background: #ffffff;
+    box-shadow: -2px 5px 2px 2px rgba(0, 0, 0, 0.25) inset;
+}
+
+.frame-882 {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 500px;
+    border: 3px solid var(--branco-fundo, #E0DCEB);
+    background: #ff0000;
+    box-shadow: -2px 5px 2px 2px rgba(0, 0, 0, 0.25) inset;
+}
+
+.bolinha-pai {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    flex-direction: row;
+
+}
+
+.frame-193 {
+    width: 80%;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--roxo-quase-branco, #C2BAD8);
+}
+
+.pulseira-pai {
+    width: 95%;
+    display: flex;
+    padding: 12px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.tamanho-da-pulseira {
+    width: 100%;
+    color: var(--cinza-quase-preto, #343434);
+    font-family: Rubik;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.mm {
+    color: var(--cinza-quase-preto, #343434);
+    font-family: Rubik;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.frame-85 {
+    display: flex;
+    width: 80px;
+    height: 25px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    border: 4px solid var(--cinza-claro-bordas-inputs, #C2BAD8);
+    background: #F5F5F5;
+
+    /* Sombra Icones Padrao */
+    box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.medida-pai {
+    width: 45%;
+    flex-direction: row;
+    display: flex;
+    gap: 15px;
+}
+
+.medida {
+    color: var(--cinza-quase-preto, #343434);
+    font-family: Rubik;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.compatibilidade {
+    display: flex;
+    justify-content: space-around;
+    align-items: first baseline;
+    width: 90%;
+
+}
+
+.pai-compatibilidade {
+    display: flex;
+    flex-direction: column;
+}
+
+.cor-compatibilidade {
+    color: var(--cinza-quase-preto, #343434);
+    font-family: Rubik;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.pai-modelo {
+    display: flex;
+    flex-direction: column;
+}
+
+.cor-disso {
+    color: var(--cinza-quase-preto, #343434);
+    font-family: Rubik;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.pai-marca {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.area-entrega {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 10px;
+}
+
+.titulo-entrega {
+    display: flex;
+    width: 100%;
+    align-items: last baseline;
+    gap: 7px;
+}
+
+.frete1 {
+    color: var(--cinza-quase-preto, #343434);
+    font-family: Rubik;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.inseir-cep {
+    display: flex;
+    width: 65%;
+    align-items: last baseline;
+    gap: 7px;
+}
+
+.imput {
+    border-radius: 6px;
+    border: 2px solid var(--cinza-claro-bordas-inputs, #C2BAD8);
+    background: var(--cor-fundo-inputs, #F0F0F0);
+    width: 70%;
+    height: 30px;
+    color: var(--roxo-quase-branco, #C2BAD8);
+    font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.btn-calcular {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 6px;
+    background: var(--roxo-principal, #483D8B);
+    cursor: pointer;
+}
+
+.calcular1 {
+    color: #FFF;
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.n-sei-meu-cep {
+    color: var(--roxo-principal, #483D8B);
+    font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+.footer-infor {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 12px;
+    background: var(--branco-fundo, #E0DCEB);
+    height: 420px;
+}
+
+.pai-do-pai {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+
+    width: 100%;
+}
+
+.pai-informacao {
+    display: flex;
+    align-items: first baseline;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 15px;
+
+    width: 40%;
+}
+
+.info {
+    margin-top: 30px;
+    color: var(--cinza-quase-preto, #343434);
+    text-align: center;
+    font-family: Roboto Condensed;
+    font-size: 24px;
+    margin-bottom: 5px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 76.758%;
+    /* 23.027px */
+}
+
+.a-vista-pai {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+}
+
+.a-vista {
+    color: var(--cinza-quase-preto, #343434);
+    font-family: Roboto Condensed;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.pai-preco {
+    display: flex;
+    flex-direction: row;
+    align-items: first baseline;
+}
+
+.pai-frete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.frete-grtis {
+    color: var(--cinza-quase-preto, #343434);
+    font-family: Rubik;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.add-sacola {
+    width: 70%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 12px;
+    background: var(--roxo-principal, #483D8B);
+    box-shadow: 0px 0px 14px 0px rgba(72, 61, 139, 0.88);
+    color: #FFF;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.icon-add{
+    height: 25px;
+    width: 25px;
+}
+.colocar-sacola {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--branco-fundo, #E0DCEB);
+    text-align: center;
+    font-family: Rubik;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}

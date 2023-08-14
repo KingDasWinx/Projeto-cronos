@@ -73,7 +73,7 @@ export const array = [
         ava: "3.9",
         nprice: "1979.10",
         oprice: "1999.99",
-        cor1: "background-color: #F5E4DD",
+        cor1: "#F5E4DD",
         cor2: "#DBD4E4",
         cor3: "#606166",
         cora: <Heart />,

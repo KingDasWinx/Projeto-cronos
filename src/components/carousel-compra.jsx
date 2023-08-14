@@ -2,38 +2,41 @@ import React, { useState } from "react";
 import "../style/carousel-compra.css";
 
 
-import `${array.img}` from "../assets/apple-watch-black.png";
-import img2 from "../assets/apple-watch-white.png";
-import img3 from "../assets/apple-watch-orange.png";
+// import `${array.img}` from "../assets/apple-watch-black.png"; --------Essa merda ta bugano (:
+// import img1 from "../assets/apple-watch-black.png";
+// import img2 from "../assets/apple-watch-white.png";
+// import img3 from "../assets/apple-watch-orange.png";
 import { array } from "../script/array";
 
 
 function CarouselCompra() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-    const viewImg = [img1, img2, img3];
-    const previmgs = [img1, img2, img3];
+    const img = array[2].img;
+    const img1 = array[2].img1;
+    const img2 = array[2].img2;
+    const img3 = array[2].img3;
 
-
+  const imagesView = [img, img1, img2, img3];
 
   const showImage = (index) => {
     setCurrentImageIndex(index);
   };
 
   const showNextImage = () => {
-    const newIndex = (currentImageIndex + 1) % viewImg.length;
+    const newIndex = (currentImageIndex + 1) % imagesView.length;
     setCurrentImageIndex(newIndex);
   };
 
   const showPrevImage = () => {
-    const newIndex = (currentImageIndex - 1 + viewImg.length) % viewImg.length;
+    const newIndex = (currentImageIndex - 1 + imagesView.length) % imagesView.length;
     setCurrentImageIndex(newIndex);
   };
 
   return (
     <div className="container-carousel">
       <div id="container-imgsButtons">
-        {previmgs.map((image, index) => (
+        {imagesView.map((image, index) => (
           <div
             key={index}
             className={`prev-imgsButtons ${
@@ -54,7 +57,7 @@ function CarouselCompra() {
           <ion-icon name="chevron-back" />
         </button>
         <div id="carousel">
-          {viewImg.map((image, index) => (
+          {imagesView.map((image, index) => (
             <img
               key={index}
               className={`view-img ${index === currentImageIndex ? "active" : ""}`}
