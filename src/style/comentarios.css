@@ -179,7 +179,7 @@
     display: flex;
     padding: 1px 12px;
     align-items: flex-start;
-    justify-content: start;
+    justify-content: flex-start;
     flex-direction: row;
     margin-top: -15px;
     align-self: stretch;

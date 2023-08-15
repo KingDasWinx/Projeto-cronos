@@ -18,24 +18,18 @@ function Footer() {
                 <div class="content-footer --column">
                     <h1 class="title-footer">Nossas Redes Sociais</h1>
                     <div class="sub-content-footer --row">
-                        <a href="">
-                            <img class="img-icon" src={instagram} alt="" />
-                        </a>
-                        <a href="">
-                            <img class="img-icon" src={facebook} alt="" />
-                        </a>
-                        <a href="">
-                            <img class="img-icon" src={linkedin} alt="" />
-                        </a>
+                        <img class="img-icon" src={instagram} alt="" />
+                        <img class="img-icon" src={facebook} alt="" />
+                        <img class="img-icon" src={linkedin} alt="" />
                     </div>
                 </div>
 
                 <div class="content-footer --column">
                     <h1 class="title-footer">Produtos</h1>
-                    <a href="#" class="link-footer">SmartWatchs</a>
-                    <a href="#" class="link-footer">Pulseiras</a>
-                    <a href="#" class="link-footer">Capinhas</a>
-                    <a href="#" class="link-footer">Películas</a>
+                    <p class="link-footer">SmartWatchs</p>
+                    <p class="link-footer">Pulseiras</p>
+                    <p class="link-footer">Capinhas</p>
+                    <p class="link-footer">Películas</p>
                 </div>
 
                 <div class="content-footer --column">
@@ -53,7 +47,7 @@ function Footer() {
                         <span class="bar"></span>
                         <div class="sub-content-footer --row" >
                             <img class="img-icon" src={email_icon} alt="" />
-                            <a href="#" class="link-footer"><strong>cronos.support@contact.com.br</strong></a>
+                            <p class="link-footer"><strong>cronos.support@contact.com.br</strong></p>
                         </div>
 
                     </div>

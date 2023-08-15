@@ -1,23 +1,24 @@
 import React, { useState } from "react";
 import "../style/carousel-compra.css";
 
-
 // import `${array.img}` from "../assets/apple-watch-black.png"; --------Essa merda ta bugano (:
 // import img1 from "../assets/apple-watch-black.png";
 // import img2 from "../assets/apple-watch-white.png";
 // import img3 from "../assets/apple-watch-orange.png";
 import { array } from "../script/array";
+import { useParams } from "react-router-dom";
 
 
 function CarouselCompra() {
+  const { id } = useParams()
+
+  const ft = array[id].img;
+  const ft1 = array[id].img1;
+  const ft2 = array[id].img2;
+  const ft3 = array[id].img3;
+
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-    const img = array[2].img;
-    const img1 = array[2].img1;
-    const img2 = array[2].img2;
-    const img3 = array[2].img3;
-
-  const imagesView = [img, img1, img2, img3];
+  const imagesView = [ft, ft1, ft2, ft3];
 
   const showImage = (index) => {
     setCurrentImageIndex(index);
@@ -39,16 +40,11 @@ function CarouselCompra() {
         {imagesView.map((image, index) => (
           <div
             key={index}
-            className={`prev-imgsButtons ${
-              index === currentImageIndex ? "selected" : ""
-            }`}
+            className={`prev-imgsButtons ${index === currentImageIndex ? "selected" : ""
+              }`}
             onClick={() => showImage(index)}
           >
-            <img
-              className="prev-img"
-              src={image}
-              alt={`Prev Image ${index + 1}`}
-            />
+            <img className="prev-img" src={image} alt=""/>
           </div>
         ))}
       </div>
@@ -62,7 +58,7 @@ function CarouselCompra() {
               key={index}
               className={`view-img ${index === currentImageIndex ? "active" : ""}`}
               src={image}
-              alt={`Image ${index + 1}`}
+              alt=""
               style={{ display: index === currentImageIndex ? "block" : "none" }}
             />
           ))}

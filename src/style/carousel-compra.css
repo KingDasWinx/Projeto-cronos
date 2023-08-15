@@ -2,9 +2,6 @@ ion-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 22px;
-  cursor: pointer;
-  color: var(--cor-fundo-INPUTS);
 }
 .bubu {
   display: flex;
@@ -29,7 +26,7 @@ ion-icon {
   border-radius: 12px;
   overflow: hidden;
   border: 4px solid var(--roxo-quase-branco);
-  background: var(--branco-fundo);
+  background-color: #fff;
 }
 
 .container-imgView {
@@ -60,6 +57,7 @@ ion-icon {
   transition: opacity 0.5s ease-in-out;
 }
 
+
 #container-imgsButtons {
   display: flex;
   align-items: center;
@@ -83,7 +81,6 @@ ion-icon {
   cursor: pointer;
   border-radius: 10px;
   border: 4px solid var(--roxo-quase-branco);
-  background: var(--cor-fundo-INPUTS);
 }
 
 .prev-imgsButtons.selected {
@@ -94,6 +91,7 @@ ion-icon {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  
 }
 
 #carousel:hover {

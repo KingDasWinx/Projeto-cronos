@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, Link, RouterProvider } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import "../style/carousel.css";
 import { Carousel } from 'react-responsive-carousel';
@@ -9,7 +9,6 @@ import img2 from '../assets/2.png'
 import img3 from '../assets/3.png'
 import img4 from '../assets/4.png'
 import img5 from '../assets/5.png'
-import Compra from '../pages/compra';
 
 
 function CarouselA() {
@@ -41,7 +40,7 @@ function CarouselA() {
                         <img src={img5} alt="Imagem 5" />
                     </div>
                 </Carousel>
-                <Link to="/compra" >
+                <Link to="/compra/7" >
                     <button className='visualizar' >Visualizar Produto</button>
                 </Link>
                 

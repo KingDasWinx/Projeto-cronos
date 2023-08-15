@@ -6,7 +6,7 @@ p{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 12px;
+    padding: 6px;
     gap: 14px;
     background: var(--roxo-principal, #483D8B);
 }

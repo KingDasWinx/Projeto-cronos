@@ -5,12 +5,19 @@ import SubHeader from "../components/sub-header";
 import Footer from '../components/footer';
 import InfosCompra from '../components/infos-compra';
 import logocronos from '../assets/logo-cronos.png'
-import logocronosbranca from '../assets/logo-cronos-branca.png'
 import React, { useState } from 'react';
 import { LoadingOutlined } from "@ant-design/icons";
+import { array } from "../script/array";
+import { useParams } from "react-router-dom";
 
 
 function Compra() {
+    const { id } = useParams()
+    const productId = parseInt(id);
+    const product = array.find(product => product.id === productId)
+
+    console.log(product);
+
     const [loading, setLoading] = useState(true);
 
     setTimeout(() => {
@@ -25,7 +32,7 @@ function Compra() {
                     <LoadingOutlined className="search-loading" />
                 </div>
             ) : (
-                <div>
+                <div className="px">
                     <Header />
                     <SubHeader />
                     <section className="compra-section">

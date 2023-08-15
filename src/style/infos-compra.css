@@ -1,35 +1,39 @@
 .personalizacao-dos-produtos {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    width: 600px;
-    height: 1100px;
+    width: 100%;
+    height: 100%;
     padding: 30px;
+    gap: 30px;
     border-radius: 10px;
     background: #ffffff;
 }
 
 .heart{
-    height: 17px;
-    width: 17px;
+    display: flex;
+    height: 24px;
+    width: 24px;
 }
 
 .relogio {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    align-items: last baseline;
+    align-items: center;
+    gap: 10px;
 }
 
 .escrita-rologio {
     color: var(--cinza-quase-preto, #343434);
     text-align: center;
     font-family: Roboto Condensed;
-    font-size: 24px;
+    font-size: 27px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    white-space: nowrap;
 }
 
 .frame-399 {
@@ -53,6 +57,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    white-space: nowrap;
 
 }
 
@@ -145,10 +150,12 @@
 
 .corzinha-pai {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-direction: row;
     width: 100%;
+    gap: 100px;
+    margin-right: 170px;
 }
 
 .cor-caixa {
@@ -188,6 +195,7 @@
     /* Sombra Icones Padrao */
     box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
+
 
 .frame-88 {
     display: flex;
@@ -235,9 +243,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70%;
     flex-direction: row;
-
+    margin-left: -100px;
 }
 
 .frame-193 {
@@ -248,13 +255,15 @@
 }
 
 .pulseira-pai {
-    width: 95%;
+    width: 84%;
     display: flex;
     padding: 12px;
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
 }
+
+
 
 .tamanho-da-pulseira {
     width: 100%;
@@ -282,7 +291,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 6px;
+    border-radius: 8px;
+    padding: 12px;
     border: 4px solid var(--cinza-claro-bordas-inputs, #C2BAD8);
     background: #F5F5F5;
 
@@ -305,7 +315,6 @@
     font-weight: 400;
     line-height: normal;
 }
-
 .compatibilidade {
     display: flex;
     justify-content: space-around;
@@ -387,10 +396,6 @@
     color: var(--roxo-quase-branco, #C2BAD8);
     font-family: Rubik;
     font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: capitalize;
 }
 
 .btn-calcular {

@@ -19,9 +19,6 @@ function Heart() {
 
     }
 
-    function favoriteItem() {
-        setTimeout(favItem)
-    }
 
     return (
         <div class="box-favoriteItem">

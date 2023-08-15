@@ -59,12 +59,15 @@ import galaxy3 from "../assets/relogios/watch_5/Galaxy3.jpg";
 import galaxy4 from "../assets/relogios/watch_5/Galaxy4.jpg";
 
 import Heart from "../components/coracao";
-import React, { createContext, useState } from 'react';
+import React, { createContext} from 'react';
 
 export const ArrayContext = createContext();
 
 export const array = [
     {
+        id: 0,
+        dis: "512",
+        numeava: "234",
         title: "Galaxy Watch 5",
         img: `${ galaxy1 }`,
         img1: `${ galaxy2 }`,
@@ -79,6 +82,9 @@ export const array = [
         cora: <Heart />,
     },
     {
+        id: 1,
+        dis: "782",
+        numeava: "425",
         title: "Amazfit gts 2e",
         img: `${gts1}`,
         img1: `${ gts2 }`,
@@ -93,6 +99,9 @@ export const array = [
         cora: <Heart />,
     },
     {
+        id: 2,
+        dis: "452",
+        numeava: "132",
         title: "Amazfit Bip 3",
         img: `${ bip3_1 }`,
         img1: `${ bip3_2 }`,
@@ -107,6 +116,9 @@ export const array = [
         cora: <Heart />,
     },
     {
+        id: 3,
+        dis: "534",
+        numeava: "224",
         title: "Smartwatch apple series 3",
         img: `${ apple1 }`,
         img1: `${ apple2 }`,
@@ -121,6 +133,9 @@ export const array = [
         cora: <Heart />,
     },
     {
+        id: 4,
+        dis: "99",
+        numeava: "264",
         title: "Apple watch seriess 8",
         img: `${ apple_8_1 }`,
         img1: `${ apple_8_2 }`,
@@ -135,6 +150,9 @@ export const array = [
         cora: <Heart />,
     },
     {
+        id: 5,
+        dis: "24",
+        numeava: "784",
         title: "Xioami smart band 7",
         img: `${ smart_7_1 }`,
         img1: `${ smart_7_2 }`,
@@ -149,6 +167,9 @@ export const array = [
         cora: <Heart />,
     },
     {
+        id: 6,
+        dis: "173",
+        numeava: "123",
         title: "Amazfit GTS 4 MINI Smartwatch",
         img: `${ gts_4_1 }`,
         img1: `${ gts_4_2 }`,
@@ -163,6 +184,9 @@ export const array = [
         cora: <Heart />,
     },
     {
+        id: 7,
+        dis: "12",
+        numeava: "2334",
         title: "Garmin Venu",
         img: `${ venu1 }`,
         img1: `${ venu2 }`,
@@ -177,6 +201,9 @@ export const array = [
         cora: <Heart />,
     },
     {
+        id: 8,
+        dis: "712",
+        numeava: "564",
         title: "Xioami Redmi Smart Band 2",
         img: `${ smart_2_1 }`,
         img1: `${ smart_2_2 }`,
@@ -191,6 +218,9 @@ export const array = [
         cora: <Heart />,
     },
     {
+        id: 9,
+        dis: "122",
+        numeava: "324",
         title: "Garmin swin 2",
         img: `${ swin1 }`,
         img1: `${ swin2 }`,
@@ -205,6 +235,9 @@ export const array = [
         cora: <Heart />,
     },
     {
+        id: 10,
+        dis: "513",
+        numeava: "167",
         title: "Galaxy Watch 5 pro",
         img: `${ pro_1 }`,
         img1: `${ pro_2 }`,
@@ -219,6 +252,9 @@ export const array = [
         cora: <Heart />,
     },
     {
+        id: 11,
+        dis: "432",
+        numeava: "12",
         title: "Xiaomi Watch S1 Active",
         img: `${ active1 }`,
         img1: `${ active2 }`,
