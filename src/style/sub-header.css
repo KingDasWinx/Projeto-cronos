@@ -2,10 +2,12 @@ p{
     margin-bottom: 0;
 }
 
-.sub-header-global-compra-direta {
+.container-subHeader {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 100vw;
+    height: 10vh;
     padding: 6px;
     gap: 14px;
     background: var(--roxo-principal, #483D8B);
@@ -13,53 +15,62 @@ p{
 
 .btn-voltar {
     display: flex;
-    padding: 10px 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
     border-radius: 100%;
-    background: #fff;
+    background: var(--branco-fundo);
 }
 
 .btn-voltar ion-icon {
-    font-size: 20px;
-    color: #343434;
+    font-size: 22px;
+    color: var(--cinza-escuro-textos);
 }
 
 .product-name {
-    color: var(--branco-fundo, #E0DCEB);
-    text-align: center;
-    font-size: 38px;
+    color: var(--branco-fundo);
+    font-size: 26px;
     font-weight: 700;
 }
 
 
 
-.area-infoscompra-header {
+.container-price {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 40%;
     gap: 30px;
+}
+.container-price p {
+    color: var(--branco-fundo);
+    font-size: 16px;
+    text-align: center;
 }
 
 .product-price {
     color: var(--branco-fundo, #E0DCEB);
     text-align: center;
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 700;
+}
+.product-price::before {
+    content: "R$";
+    font-size: 14px;
 }
 
-.product-price-color {
-    color: var(--branco-fundo, #D9D9D9);
-    font-family: Rubik;
-    font-size: 22px;
-    font-weight: 600;
-}
 
 .btn-compraragora {
     display: flex;
-    padding: 10px;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 10px;
+    width: 180px;
+    font-size: 14px;
     font-weight: 600;
+    word-break: keep-all;
 
     color: #343434;
     border-radius: 50px;
@@ -74,12 +85,29 @@ p{
     .product-price {
         font-size: 14px;
     }
-    .product-price-color {
-        font-size: 16px;
-    }
 }
-@media (max-width: 568px) {
-    .sub-header-global-compra-direta{
+@media (max-width: 600px) {
+    .container-subHeader{
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        height: 80px;
+        background: var(--branco-fundo);
+        /* display: none; */
+    }
+    .product-name {
+        color: var(--roxo-principal);
+    }
+    .btn-voltar {
+        top: 50%;
+        transform: translateY(-50%);
+        left: 12px;
+        position: absolute;
+    }
+    .btn-voltar ion-icon {
+        font-size: 26px;
+    }
+    .container-price {
         display: none;
     }
 }

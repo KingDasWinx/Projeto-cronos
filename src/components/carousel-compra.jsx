@@ -49,7 +49,7 @@ function CarouselCompra() {
         ))}
       </div>
       <div className="container-imgView">
-        <button className="bubu" id="prevBtn" onClick={showPrevImage}>
+        <button className="controls-button" id="prevBtn" onClick={showPrevImage}>
           <ion-icon name="chevron-back" />
         </button>
         <div id="carousel">
@@ -63,7 +63,7 @@ function CarouselCompra() {
             />
           ))}
         </div>
-        <button className="bubu" id="nextBtn" onClick={showNextImage}>
+        <button className="controls-button" id="nextBtn" onClick={showNextImage}>
           <ion-icon name="chevron-forward" />
         </button>
       </div>

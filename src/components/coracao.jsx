@@ -1,6 +1,6 @@
-import '../style/coracao.css'
+import '../style/coracao.css';
 
-function Heart() {
+export default function Heart() {
     const icons = document.querySelectorAll('ion-icon');
     function favItem() {
         icons.forEach(icon => {
@@ -32,5 +32,3 @@ function Heart() {
         </div>
     )
 }
-
-export default Heart;

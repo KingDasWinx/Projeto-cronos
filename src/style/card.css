@@ -140,7 +140,7 @@
 }
 
 /* ----- Price ----- */
-.container-price {
+.container-prices {
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -153,7 +153,6 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-
 }
 
 .cora {
@@ -207,6 +206,7 @@
         position: relative;
         width: 45%;
         height: 380px;
+        justify-content: space-between;
     }
     .papi {
         gap: 14px;
@@ -231,9 +231,19 @@
         font-size: 4vw;
     }
     .container-images {
-        width: 100%;
+        width: 80%;
+        height: 60%;
         margin-bottom: 10px;
         margin-top: 10px;
+    }
+    .img-view {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .container-foot {
+        width: 100%;
+        height: 20%;
     }
     .bu {
         border-radius: 16px;
@@ -246,8 +256,8 @@
         display: none;
     }
     .cora {
+        position: absolute;
         top: 2rem;
         right: 1rem;
-        position: absolute;
     }
 }

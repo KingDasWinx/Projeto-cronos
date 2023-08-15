@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { array } from "../script/array";
 import "../style/infos-compra.css";
+import Heart from "../components/coracao"
 
 function InfosCompra() {
 
@@ -16,7 +17,7 @@ function InfosCompra() {
     <div className="pxx" >
       <div key={product.id} class="personalizacao-dos-produtos">
         <div class="relogio">
-          <ion-icon class="heart" name="heart-outline"></ion-icon>
+          <Heart />
           <span class="escrita-rologio">{product.title}</span>
           <div class="frame-399">
             <span class="estoque">Estoque:</span>

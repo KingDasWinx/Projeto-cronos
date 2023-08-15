@@ -1,9 +1,4 @@
-ion-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.bubu {
+.controls-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,7 +8,6 @@ ion-icon {
   border-radius: 50px;
   background: var(--roxo-claro);
 }
-
 
 .container-carousel {
   display: flex;
@@ -27,6 +21,11 @@ ion-icon {
   overflow: hidden;
   border: 4px solid var(--roxo-quase-branco);
   background-color: #fff;
+}
+.container-carousel ion-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container-imgView {
