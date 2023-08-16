@@ -25,7 +25,7 @@ function Compra() {
     }, 1000);
 
     return (
-        <di>
+        <div>
             {loading ? (
                 <div className="search-pai" >
                     <img src={logocronos} alt="" />
@@ -43,7 +43,7 @@ function Compra() {
                     <Footer />
                 </div>
             )}
-        </di>
+        </div>
     )
 }
 

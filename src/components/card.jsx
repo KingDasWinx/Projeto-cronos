@@ -2,6 +2,7 @@ import React from "react";
 import "../style/card.css";
 import { Link } from "react-router-dom";
 import { array } from "../script/array";
+import Heart from "./coracao";
 
 function Card() {
 
@@ -28,11 +29,11 @@ function Card() {
             <h1 className="name-product">{array.title}</h1>
 
             <div className="container-foot">
-              <div className="container-price">
+              <div className="container-prices">
                 <p className="old-price">{array.oprice}</p>
                 <p className="new-price">{array.nprice}</p>
               </div>
-              <div className="cora"></div>
+              <div className="cora"><Heart/></div>
             </div>
 
             <Link to={`/compra/${array.id}`}>

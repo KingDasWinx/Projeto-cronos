@@ -60,13 +60,13 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 24px;
-    top: 0;
     width: 100vw;
     height: 12vh;
+    padding: 1rem;
+    gap: 24px;
     background: var(--branco-fundo);
     border-bottom: 4px solid var(--roxo-principal);
-    z-index: 999999;
+    z-index: 100;
 }
 
 /* ======= Left Div ======= */
