@@ -35,7 +35,7 @@ p{
 
 
 
-.container-price {
+.container-prices {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,7 +43,7 @@ p{
     width: 40%;
     gap: 30px;
 }
-.container-price p {
+.container-prices p {
     font-size: 16px;
     text-align: center;
 }
@@ -110,7 +110,7 @@ p{
     .btn-voltar ion-icon {
         font-size: 26px;
     }
-    .container-price {
+    .container-prices {
         display: none;
     }
 }
