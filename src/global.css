@@ -6,7 +6,6 @@
     box-sizing: border-box;
     font-family: 'Rubik';
     /* outline: 2px dashed #000; */
-    transition: all .5s ease;
 }
 
 :root {
