@@ -98,7 +98,7 @@ export const array = [
         cor2: "#6E6D69",
         cor3: "#E33751",
         cora: <Heart />,
-        desc: "",
+        desc: "O Galaxy Watch 5 pro possui um sistema operacional Android Wear OS 3.5, com um visual moderno possuindo um display de 1,4 polegadas com 16 gb, possuindo várias áreas de acessibilidade para o usuário. ",
     },
     {
         id: 2,
@@ -170,7 +170,7 @@ export const array = [
         cor2: "#383B41",
         cor3: "#7f8383",
         cora: <Heart />,
-        desc: "",
+        desc: "O Xiaomi smart band 7 é um dos melhores smartwatches preparados para ser utilizado nos esportes, com o seu peso sendo considerado uns dos mais leves pesando apenas 13,5g e possuindo uma boa resolução de tela e tendo uma boa bateria.",
     },
     {
         id: 6,
@@ -188,7 +188,7 @@ export const array = [
         cor2: "#F4E0D9",
         cor3: "#DAECED",
         cora: <Heart />,
-        desc: ""
+        desc: "O Amazfit GTS 4 MINI Smartwatch em um relógio que possui uma das maiores durabilidades da bateria, possuindo um peso de 19g, com uma boa resolução para o usuário. Ele possui as principais cores sendo: preto meia-noite; azul menta; luz branca e rosa flamingo."
     },
     {
         id: 7,
@@ -206,7 +206,7 @@ export const array = [
         cor2: "#E6E2DF",
         cor3: "#9E9E9E",
         cora: <Heart />,
-        desc: "",
+        desc: " O Garmin Venu possui uma grande densidade de píxeis com uma boa temperatura máxima sendo de 60ºC, isso graças ao seu material que possui silicone. Outro atrativo muito importante é seu tempo de carregamento que é de 1 hora. Suas cores principais são: cinza/ardósia; ouro branco/creme e menta fresca/menta metálica.",
     },
     {
         id: 8,
@@ -224,7 +224,7 @@ export const array = [
         cor2: "#D8D3CF",
         cor3: "#5FBCBF",
         cora: <Heart />,
-        desc: "",
+        desc: "O Xiaomi Redmi Smart Band 2 possui um tamanho de tela de 1,14 polegadas e com uma resolução de 172 x 320px. O peso dele é de apenas 23,82 g e uma capacidade de bateria de 127.8 mAh. As suas principais cores são: oliva, marfim, rosa, verde, azul e preto. ",
     },
     {
         id: 9,
@@ -242,7 +242,7 @@ export const array = [
         cor2: "#667282",
         cor3: "#171617",
         cora: <Heart />,
-        desc: "",
+        desc: "O Garmin swin 2 possui um visor de 26,3 mm de diâmetro, ele é aperfeiçoado para a natação podendo durar muito tempo embaixo d'água. o material dele é de silicone e a resolução dele é de LXA 208 e um visor de ecrã e cores.",
     },
     {
         id: 1,
@@ -278,7 +278,7 @@ export const array = [
         cor2: "#363739",
         cor3: "#E1C54C",
         cora: <Heart />,
-        desc: "",
+        desc: "O Xiaomi Watch S1 Active possui um visual moderno com muitas versões de bluetooth e com uma alta resolução. O estilo dele é inspirado em tiras e é possível chegar até 50 metros de profundidade caso seja necessário.",
     }
 
 ]
