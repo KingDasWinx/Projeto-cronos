@@ -103,7 +103,7 @@ function Comentario() {
                                     </div>
                                     <div class="frame-439-1">
                                         <div class="frame-444">
-                                            <p class="modelo">Modelo:</p>
+                                            <p class="modelo-o">Modelo:</p>
                                             <span class="modelo-user frame-439-2">• {user.modelo}</span>
                                         </div>
                                         <div class="frame-445">
