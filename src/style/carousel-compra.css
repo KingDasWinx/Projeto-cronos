@@ -1,3 +1,22 @@
+:root {
+  --roxo-principal: #483D8B;
+  --roxo-mais-claro: #6652E2;
+  --roxo-claro: #8679B1;
+  --roxo-mais-claro: #A499C4;
+  --roxo-quase-branco: #C2BAD8;
+  --branco-fundo: #E0DCEB;
+
+  --cor-fundo-INPUTS: #F0F0F0;
+  --cinza-claro-bordas-INPUTS: #C2BAD8;
+  
+  --cinza-quase-preto: #343434;
+  --cinza-escuro-TEXTOS: #7B7B7B;
+  --cinza: #8E8E8E;
+}
+
+
+
+
 .controls-button {
   display: flex;
   align-items: center;
@@ -144,4 +163,25 @@
   background-color: transparent;
   border-radius: 20px;
   border: transparent;
+}
+
+
+
+
+
+.sub-detalhes{
+  flex-direction: column;
+}
+.detalhes{
+  width: 98%;
+}
+.testess {
+  display: flex;
+  margin-left: 20px;
+}
+
+.testeee{
+  font-size: 32px;
+  margin-left: 20px;
+  color: var(--cinza-quase-preto);
 }

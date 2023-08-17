@@ -25,6 +25,7 @@
     --cinza: #8E8E8E;
 }
 body {
+  overflow-x: hidden;
   background-color: #F0F0F0;
 }
 
@@ -66,7 +67,7 @@ section {
 }
 
 .compra-section {
-  width: 100vw;
+  width: 98vw;
   height: auto;
   justify-content: space-around;
   align-items: flex-start;

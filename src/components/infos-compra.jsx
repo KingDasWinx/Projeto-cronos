@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { array } from "../script/array";
 import "../style/infos-compra.css";
 import Heart from "../components/coracao"
@@ -111,17 +111,17 @@ function InfosCompra() {
           <div class="pai-do-pai">
             <div class="pai-informacao">
               <div class="paii">
-                <span class="corzinha">Cor:</span>
+                <span class="corzinha">Cor: </span>
                 <span class="dark2">Dark Black</span>
               </div>
 
               <div class="paii">
-                <span class="corzinha">Tam. Pulseira</span>
+                <span class="corzinha">Tam. Pulseira: </span>
                 <span class="dark2">14mm</span>
               </div>
 
               <div class="paii">
-                <span class="corzinha">Acessórios</span>
+                <span class="corzinha">Acessórios: </span>
                 <span class="dark2">Não</span>
               </div>
             </div>
@@ -151,10 +151,12 @@ function InfosCompra() {
               </div>
             </div>
           </div>
+          <Link to={`/sacola/${product.id}`} >
           <div class="add-sacola">
             <ion-icon class="icon-add" name="add-circle-outline"></ion-icon>
             <span class="colocar-sacola">Colocar na Sacola</span>
           </div>
+          </Link>
         </div>
       </div>
     </div>

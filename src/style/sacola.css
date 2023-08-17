@@ -1,0 +1,439 @@
+.body-sacola {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.conteiner-sacola {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 12px;
+    background: var(--branco-fundo, #E0DCEB);
+}
+
+.produtos-delete {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    align-items: center;
+    width: 100%;
+
+    flex-wrap: wrap;
+}
+
+
+
+.imagem-pai {
+    margin-bottom: 10px;
+}
+
+.produtos-frete {
+    display: flex;
+    justify-content: center;
+    width: 35%;
+    color: var(--roxo-principal, #483D8B);
+    text-align: center;
+    font-family: Rubik;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.dados {
+    width: 24px;
+    height: 24px;
+}
+
+.imagem-pai {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid var(--cinza-claro-bordas-inputs, #C2BAD8);
+    background: #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.relogio-sacola {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.limpar-sacola {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: var(--roxo-secundario);
+    color: #ffffff;
+    text-align: center;
+    font-family: Rubik;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.card-itemSacola {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: auto;
+    gap: 2rem;
+    padding: 1rem;
+    border-radius: 12px;
+    background: #F1F1F1;
+    box-shadow: 2px 6px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.relogio-sacola {
+    width: 5rem;
+    height: 5rem;
+}
+
+.adicionar-remove {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 6px;
+    background: #FFF;
+    box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.50);
+    width: 5rem;
+    height: 22px;
+    margin-top: 10px;
+}
+
+.trash {
+    visibility: visible;
+    display: block;
+    color: #fff;
+}
+
+.trash-bu {
+    padding: 1px;
+    border-radius: 50px;
+    background-color: var(--roxo-mais-claro);
+}
+
+.remove,
+.add {
+    visibility: visible;
+    padding: 1px;
+    border-radius: 50px;
+    color: #FFF;
+    cursor: pointer;
+}
+
+
+
+.remove {
+    display: block;
+    background: var(--roxo-principal, #483D8B);
+}
+
+.add {
+    display: block;
+    background-color: var(--roxo-principal);
+}
+
+.escrita-nome-relogio-pai {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 3rem;
+}
+
+.escrita-nome-relogio {
+    color: var(--cinza-quase-preto, #343434);
+    font-family: Roboto Condensed;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.marca {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 5rem;
+    font-size: 13px;
+}
+
+.modelo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 5rem;
+    font-size: 13px;
+}
+
+.relogio-infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    gap: 15px;
+}
+
+.modelo-black {
+    color: var(--cinza-quase-preto, #343434);
+    font-family: Rubik;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.cor-tam-pai {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 4.5rem;
+}
+
+.cor-do-produto {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    font-size: 13px;
+}
+
+.cor-bolinha {
+    padding: 8px;
+    border-radius: 500px;
+    border: 4px solid var(--branco-fundo, #E0DCEB);
+    background: #414141;
+    box-shadow: -2px 5px 2px 2px rgba(0, 0, 0, 0.25) inset;
+}
+
+.tamanho-pulseira {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    font-size: 13px;
+}
+
+.preco-bag {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 7rem;
+}
+
+.preco-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.produto-size,
+.frete-size,
+.valor-size {
+    font-size: 13px;
+}
+
+.valor-size-roxo {
+    color: var(--roxo-mais-claro);
+    font-size: 13px;
+}
+
+.bar-hor {
+    height: 2px;
+    border-radius: 2px;
+    width: 70%;
+    background: var(--roxo-mais-claro, #A499C4);
+}
+
+.bar-ver {
+    height: 100%;
+    width: 20px;
+    border-radius: 10px;
+    background: var(--roxo-mais-claro, #A499C4);
+}
+
+.preco-bag-roxo,
+.preco-roxo {
+    color: var(--roxo-principal, #483D8B);
+    font-family: Rubik;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.card-pagamento {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    padding: 1rem;
+    gap: 15px;
+    border-radius: 12px;
+    background: var(--branco-fundo, #E0DCEB);
+}
+
+.menu-icon,
+.info-pagamento {
+    color: var(--roxo-principal, #483D8B);
+    font-family: Rubik;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.info-pagamento-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.conteiner-info-pagamento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    gap: 1rem;
+}
+
+.valor-escrita {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.valor-escrita-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70%;
+    height: 100%;
+    background-color: var(--roxo-mais-claro);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.conteiner-pix-pai {
+    background: #C2BAD880;
+    width: 70%;
+    height: auto;
+    border-radius: 12px;
+    padding-bottom: 15px;
+    gap: 5px;
+}
+
+.conteiner-pix {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+}
+
+.desconto-12 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.desconto12 {
+    color: #fff;
+    padding: 3px;
+    background-color: var(--roxo-secundario);
+    border-radius: 8px;
+
+}
+
+.pagamento-compras {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: auto;
+    gap: 12px;
+}
+
+.button-pagamento {
+    border-radius: 10px;
+    padding: 15px;
+    background: #483D8B;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.button-compras {
+    border-radius: 10px;
+    padding: 15px;
+    background: #ffffff;
+    color: var(--roxo-principal);
+    border: var(--roxo-principal) solid;
+    cursor: pointer;
+}
+
+.container-pai-do-pai {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+
+@media (max-width: 913px) {
+    .card-itemSacola {
+        flex-direction: column;
+        width: 90%;
+        gap: 24px;
+    }
+}
+
+@media (max-width: 560px) {
+    .produtos-delete {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .preco-bag {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .produto-size,
+    .frete-size,
+    .valor-size {
+        font-size: 13px;
+        text-align: center;
+    }
+}

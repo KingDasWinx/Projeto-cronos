@@ -188,8 +188,7 @@ export const array = [
         cor2: "#F4E0D9",
         cor3: "#DAECED",
         cora: <Heart />,
-        desc: "",
-        desc: "",
+        desc: ""
     },
     {
         id: 7,

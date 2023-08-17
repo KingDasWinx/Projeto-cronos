@@ -44,9 +44,12 @@ p{
     gap: 30px;
 }
 .container-price p {
-    color: var(--branco-fundo);
     font-size: 16px;
     text-align: center;
+}
+
+.produdu{
+    color: var(--branco-fundo);
 }
 
 .product-price {

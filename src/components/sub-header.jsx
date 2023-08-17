@@ -4,18 +4,18 @@ import { array } from "../script/array";
 import { useParams } from "react-router-dom";
 
 function SubHeader() {
+
     const { id } = useParams()
-    
-    const nameProduct = array[id].title
-    const priceProduct = array[id].nprice
+    const productId = parseInt(id);
+    const product = array.find(product => product.id === productId)
 
     return (
-        <div class="container-subHeader">
+        <div key={product.id} class="container-subHeader">
             <Link to="/" ><button class="btn-voltar"><ion-icon class="back" name="chevron-back"></ion-icon></button> </Link>
-            <p class="product-name">{nameProduct}</p>
+            <p class="product-name">{product.title}</p>
 
             <div class="container-price">
-                <p>Modelo à partir de: <span class="product-price">{priceProduct}</span></p>
+                <p className="produdu" >Modelo à partir de: <span class="product-price">{product.nprice}</span></p>
                 <button class="btn-compraragora">Comprar agora!</button>
             </div>
         </div>

@@ -36,9 +36,16 @@ function Compra() {
                     <Header />
                     <SubHeader />
                     <section className="compra-section">
+                        <div className="sub-detalhes" >
                         <CarouselCompra />
+                        <div className="detalhes" >
+                            <p className="testeee" >Descrição:</p>
+                            <p className="testess" >{product.desc}</p>
+                        </div>
+                        </div>
                         <InfosCompra />
                     </section>
+                    
                     <Comentario />
                     <Footer />
                 </div>

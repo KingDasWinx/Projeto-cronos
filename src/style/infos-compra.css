@@ -301,7 +301,7 @@
 }
 
 .medida-pai {
-    width: 45%;
+    width: 100%;
     flex-direction: row;
     display: flex;
     gap: 15px;
@@ -512,7 +512,7 @@
 }
 
 .add-sacola {
-    width: 70%;
+    width:100%;
     padding: 20px;
     display: flex;
     justify-content: space-evenly;
@@ -530,6 +530,7 @@
     width: 25px;
 }
 .colocar-sacola {
+    text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
