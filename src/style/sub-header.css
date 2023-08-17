@@ -110,4 +110,7 @@ p{
     .btn-voltar ion-icon {
         font-size: 26px;
     }
+    .container-price {
+        display: none;
+    }
 }
