@@ -37,6 +37,7 @@
   height: 60vh;
   border-radius: 12px;
   overflow: hidden;
+  width: 80%;
   border: 4px solid var(--roxo-quase-branco);
   background-color: #fff;
 }
@@ -170,6 +171,9 @@
 
 .sub-detalhes{
   flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .detalhes{
   width: 98%;
