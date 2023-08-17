@@ -11,7 +11,7 @@ function SubHeader() {
 
     return (
         <div key={product.id} class="container-subHeader">
-            <Link to="/" ><button class="btn-voltar"><ion-icon class="back" name="chevron-back"></ion-icon></button> </Link>
+            <Link to="/search" ><button class="btn-voltar"><ion-icon class="back" name="chevron-back"></ion-icon></button> </Link>
             <p class="product-name">{product.title}</p>
 
             <div class="container-price kaike" >
