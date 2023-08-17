@@ -14,7 +14,7 @@ function SubHeader() {
             <Link to="/" ><button class="btn-voltar"><ion-icon class="back" name="chevron-back"></ion-icon></button> </Link>
             <p class="product-name">{product.title}</p>
 
-            <div class="container-price">
+            <div class="container-prices">
                 <p className="produdu" >Modelo à partir de: <span class="product-price">{product.nprice}</span></p>
                 <button class="btn-compraragora">Comprar agora!</button>
             </div>
