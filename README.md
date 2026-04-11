@@ -39,20 +39,20 @@ Para ter uma cópia local deste projeto rodando, siga os passos abaixo.
 ### 🛠️ Installation
 
 1. **Clone o repositório:**
-   `ash
+   ```bash
    git clone https://github.com/kingdaswinx/Projeto-cronos.git
    cd Projeto-cronos
-   `
+   ```
 
 2. **Instale as dependências:**
-   `ash
+   ```bash
    npm install
-   `
+   ```
 
 3. **Inicie o servidor de desenvolvimento:**
-   `ash
+   ```bash
    npm start
-   `
+   ```
    > Abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver a aplicação.
 
 ## 🤝 Contributing
@@ -60,9 +60,9 @@ Para ter uma cópia local deste projeto rodando, siga os passos abaixo.
 Contribuições e melhorias são bem-vindas!
 
 1. Faça o **fork** deste repositório.
-2. Crie uma branch para a sua feature (git checkout -b feature/nova-feature).
-3. Faça os commits das suas alterações (git commit -m 'feat: adicionei uma nova funcionalidade').
-4. Faça o push para a branch original (git push origin feature/nova-feature).
+2. Crie uma branch para a sua feature (`git checkout -b feature/nova-feature`).
+3. Faça os commits das suas alterações (`git commit -m 'feat: adicionei uma nova funcionalidade'`).
+4. Faça o push para a branch original (`git push origin feature/nova-feature`).
 5. Abra o Pull Request.
 
 <div align="center">
