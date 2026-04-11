@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+﻿<div align="center">
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/Material%20UI-007FFF?style=for-the-badge&logo=mui&logoColor=white" alt="Material UI" />
+  <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap" />
+  <img src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white" alt="Styled Components" />
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <h1>⌚ Projeto Cronos</h1>
+  <p>Uma aplicação web moderna para catálogo e venda de smartwatches.</p>
+</div>
 
-## Available Scripts
+## 💡 Overview
 
-In the project directory, you can run:
+O **Projeto Cronos** é uma vitrine virtual e loja de smartwatches desenvolvida com **React.js**. Focada na performance e em uma interface agradável ao usuário, a aplicação permite visualizar detalhes de diferentes relógios inteligentes, adicioná-los à sacola de compras, pesquisar modelos (como Apple Watch, Galaxy Watch, Amazfit, entre outros) e ter uma experiência completa de navegação.
 
-### `npm start`
+## ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **🛍️ Catálogo de Produtos:** Visualização de vários modelos de smartwatches de diferentes marcas.
+- **🛒 Carrinho de Compras:** Sistema de sacola inteligente para gerenciar os itens selecionados.
+- **🔍 Pesquisa Global:** Encontre relógios rapidamente através da página de busca integrada.
+- **📱 Design Responsivo:** Interface adaptável entre mobile e desktop usando Material UI e Bootstrap.
+- **🎨 Componentização UI:** Código modular com carrosséis, cards interativos e interface rica em detalhes.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 👩‍💻 Tech Stack
 
-### `npm test`
+- **[React](https://reactjs.org/)**: Biblioteca front-end JavaScript para criar interfaces de usuário.
+- **[React Router Dom](https://reactrouter.com/)**: Gerenciamento das rotas e navegação da aplicação.
+- **[Material UI (MUI)](https://mui.com/) & [Ant Design](https://ant.design/)**: Componentes React avançados de design.
+- **[Bootstrap](https://getbootstrap.com/)**: Framework para design 100% responsivo.
+- **[Styled Components](https://styled-components.com/)**: Estilização baseada em componentes para maior controle do CSS.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📦 Getting Started
 
-### `npm run build`
+Para ter uma cópia local deste projeto rodando, siga os passos abaixo.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🚀 Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Node.js** e **npm** (ou yarn) instalados em sua máquina.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🛠️ Installation
 
-### `npm run eject`
+1. **Clone o repositório:**
+   `ash
+   git clone https://github.com/kingdaswinx/Projeto-cronos.git
+   cd Projeto-cronos
+   `
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. **Instale as dependências:**
+   `ash
+   npm install
+   `
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. **Inicie o servidor de desenvolvimento:**
+   `ash
+   npm start
+   `
+   > Abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver a aplicação.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🤝 Contributing
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Contribuições e melhorias são bem-vindas!
 
-## Learn More
+1. Faça o **fork** deste repositório.
+2. Crie uma branch para a sua feature (git checkout -b feature/nova-feature).
+3. Faça os commits das suas alterações (git commit -m 'feat: adicionei uma nova funcionalidade').
+4. Faça o push para a branch original (git push origin feature/nova-feature).
+5. Abra o Pull Request.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<div align="center">
+  <hr>
+  <i>Desenvolvido com foco e dedicação para o Projeto Cronos.</i>
+</div>
