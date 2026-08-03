@@ -12,6 +12,22 @@
 
 O **Projeto Cronos** é uma vitrine virtual e loja de smartwatches desenvolvida com **React.js**. Focada na performance e em uma interface agradável ao usuário, a aplicação permite visualizar detalhes de diferentes relógios inteligentes, adicioná-los à sacola de compras, pesquisar modelos (como Apple Watch, Galaxy Watch, Amazfit, entre outros) e ter uma experiência completa de navegação.
 
+O projeto foi desenvolvido durante o ensino médio integrado ao curso de **Análise e Desenvolvimento de Sistemas**.
+
+## 📸 Screenshots
+
+### Página inicial
+
+![Página inicial do Projeto Cronos](docs/screenshots/home.png)
+
+### Catálogo de produtos
+
+![Catálogo de smartwatches](docs/screenshots/catalog.png)
+
+### Detalhes do produto
+
+![Página de detalhes de um smartwatch](docs/screenshots/product-details.png)
+
 ## ✨ Features
 
 - **🛍️ Catálogo de Produtos:** Visualização de vários modelos de smartwatches de diferentes marcas.
