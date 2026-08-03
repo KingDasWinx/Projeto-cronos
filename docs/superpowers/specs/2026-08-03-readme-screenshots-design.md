@@ -4,6 +4,8 @@
 
 Mostrar a versão desktop publicada do Projeto Cronos diretamente no README.
 
+Atualizar a apresentação para informar que o site foi desenvolvido durante o ensino médio integrado ao curso de Análise e Desenvolvimento de Sistemas.
+
 ## Conteúdo
 
 - Captura do início da loja.
